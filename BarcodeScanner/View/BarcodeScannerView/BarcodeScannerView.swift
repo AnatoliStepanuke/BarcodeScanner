@@ -16,11 +16,7 @@ struct BarcodeScannerView: View {
                 Label("Scanned Barcode:", systemImage: "barcode.viewfinder")
                     .font(.title)
                 
-                Text(viewModel.statusText)
-                    .bold()
-                    .font(.largeTitle)
-                    .foregroundStyle(viewModel.statusTextColor)
-                    .padding()
+               BarcodeStatusText()
             }
             .navigationTitle("Barcode Scanner")
             .alert(item: $viewModel.alertItem) { alertItem in
