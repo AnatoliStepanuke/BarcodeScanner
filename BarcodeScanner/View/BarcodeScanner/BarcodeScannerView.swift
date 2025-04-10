@@ -2,8 +2,10 @@ import SwiftUI
 
 struct BarcodeScannerView: View {
     
+    // MARK: - Properties
     @StateObject var viewModel = BarcodeScannerViewModel()
 
+    // MARK: - Body
     var body: some View {
         NavigationStack {
             VStack {
