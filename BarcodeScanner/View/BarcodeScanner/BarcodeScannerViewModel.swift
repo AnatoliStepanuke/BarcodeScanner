@@ -1,10 +1,10 @@
 import SwiftUI
 
-final class BarcodeScannerViewModel: ObservableObject {
+@Observable final class BarcodeScannerViewModel {
     
     // MARK: - Properties
-    @Published var scannedCode = ""
-    @Published var alertItem: AlertItem?
+    var scannedCode = ""
+    var alertItem: AlertItem?
     
     // MARK: - Helpers
     var statusText: String {
