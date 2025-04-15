@@ -3,8 +3,8 @@ import SwiftUI
 struct BarcodeScannerView: View {
     
     // MARK: - Properties
-    @StateObject var viewModel = BarcodeScannerViewModel()
-
+    @State var viewModel = BarcodeScannerViewModel()
+    
     // MARK: - Body
     var body: some View {
         NavigationStack {

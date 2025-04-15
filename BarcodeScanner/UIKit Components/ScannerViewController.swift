@@ -17,7 +17,7 @@ protocol ScannerViewControllerDelegate: AnyObject {
 final class ScannerViewController: UIViewController {
     
     // MARK: - Constants
-    let captureSession = AVCaptureSession()
+    private let captureSession = AVCaptureSession()
     
     // MARK: - Variables
     var previewLayer: AVCaptureVideoPreviewLayer?
